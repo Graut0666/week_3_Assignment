@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gopal Raut | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Header and primary navigation -->
+  <header>
+    <h1>Gopal Raut</h1>
+    <p>Web Developer &amp; Designer</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- About section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img
+        src="pic.png"
+        alt="Portrait photograph of Gopal Raut, web developer"
+        width="200"
+        height="200"
+      />
+      <p>
+        I am a web developer with a background in front-end design and server-side
+        development. I build accessible, standards-compliant websites and web
+        applications, with a focus on clean HTML structure and user-centered design.
+        Currently completing a Bachelor of Science in Web Design and Development at
+        International American University, expected graduation May 2026.
+      </p>
+      <p>
+        Outside of coursework I contribute to open-source projects and participate
+        in local hackathons. I am comfortable working across the full stack, from
+        writing semantic HTML and styling with CSS to building REST APIs with
+        Node.js and Express.
+      </p>
+    </section>
+
+    <!-- Skills section using description list -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <dl>
+        <dt>HTML5</dt>
+        <dd>Semantic markup, accessibility attributes, W3C-compliant document structure.</dd>
+
+        <dt>CSS3</dt>
+        <dd>Responsive layouts, media queries, Flexbox, CSS Grid, mobile-first design.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>DOM manipulation, event handling, fetch API, ES6+ syntax.</dd>
+
+        <dt>React</dt>
+        <dd>Functional components, React Hooks (useState, useEffect), component-based UI architecture.</dd>
+
+        <dt>Node.js &amp; Express</dt>
+        <dd>RESTful API development, middleware configuration, server-side routing.</dd>
+
+        <dt>Version Control</dt>
+        <dd>Git workflow, GitHub repositories, branching strategies, pull requests.</dd>
+
+        <dt>Web Accessibility</dt>
+        <dd>WCAG 2.1 compliance, ARIA roles, screen-reader-compatible markup, color contrast standards.</dd>
+      </dl>
+    </section>
+
+    <!-- Projects section using article tags -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+      <article>
+        <h3>Responsive Restaurant Menu Site</h3>
+        <p>
+          A fully responsive, multi-page website built for a local restaurant. The
+          project uses semantic HTML5 for structure and CSS media queries to adapt
+          the layout across mobile, tablet, and desktop viewports. The navigation
+          collapses into a vertical single-column list on small screens and expands
+          to a horizontal bar on wider viewports.
+        </p>
+        <p>
+          <strong>Technologies used:</strong> HTML5, CSS3, media queries
+        </p>
+        <p>
+          <a href="https://github.com/Graut0666/restaurant-menu-site" target="_blank">
+            View Repository on GitHub
+          </a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Task Tracker Web App</h3>
+        <p>
+          A single-page task management application built with React and a Node.js
+          back end. Users can add, edit, delete, and filter tasks by status. The
+          application communicates with a local Express REST API and persists data
+          using JSON file storage. The front end uses functional components and
+          React Hooks exclusively, with no class-based components.
+        </p>
+        <p>
+          <strong>Technologies used:</strong> React, Node.js, Express, HTML5, CSS3
+        </p>
+        <p>
+          <a href="https://github.com/Graut0666/task-tracker-app" target="_blank">
+            View Repository on GitHub
+          </a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Personal Budget Dashboard</h3>
+        <p>
+          A browser-based budget tracking tool that reads transaction data from a
+          CSV file and displays a summary of income versus expenses by category.
+          Built with vanilla JavaScript and HTML5 table elements, with no external
+          libraries. The user can upload a CSV, and the dashboard calculates totals
+          and renders the results in a structured table.
+        </p>
+        <p>
+          <strong>Technologies used:</strong> HTML5, CSS3, JavaScript (ES6+)
+        </p>
+        <p>
+          <a href="https://github.com/Graut0666/budget-dashboard" target="_blank">
+            View Repository on GitHub
+          </a>
+        </p>
+      </article>
+
+      </div>
+    </section>
+
+    <!-- Contact form section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Use the form below to get in touch. I respond to most messages within
+        one to two business days.
+      </p>
+
+      <form action="#" method="post">
+
+        <div>
+          <label for="name">Full Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="email">Email Address</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="subject">Subject</label><br />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Brief subject of your message"
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="message">Message</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="40"
+            placeholder="Type your message here"
+            required
+          ></textarea>
+        </div>
+
+        <br />
+
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2025 Gopal Raut. All rights reserved.
+    </p>
+    <p>
+      <a href="https://github.com/Graut0666" target="_blank">GitHub</a> |
+      <a href="mailto:graut0666@gmail.com">graut0666@gmail.com</a>
+    </p>
+  </footer>
+
+</body>
+</html>
